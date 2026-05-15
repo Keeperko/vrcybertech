@@ -1,4 +1,195 @@
 export default function VRCybertechWebsite() {
+  const services = [
+    {
+      title: 'VR Školenia Zamestnancov',
+      desc: 'Interaktívne VR tréningy pre rýchlejšie zaučenie pracovníkov vo výrobe, logistike a priemysle.',
+    },
+    {
+      title: 'BOZP Simulácie',
+      desc: 'Virtuálne bezpečnostné školenia a simulácie rizikových situácií bez reálneho ohrozenia zamestnancov.',
+    },
+    {
+      title: 'Priemyselné 3D Simulácie',
+      desc: 'Digitálne simulácie výrobných procesov, strojov a pracovísk pre moderný priemysel.',
+    },
+    {
+      title: 'VR Firemné Tréningy',
+      desc: 'Moderné školenia pre firmy, ktoré skracujú čas adaptácie nových zamestnancov a znižujú chybovosť.',
+    },
+  ];
+
+  const projects = [
+    {
+      name: 'VR Safety Training',
+      category: 'BOZP & bezpečnosť',
+    },
+    {
+      name: 'Factory VR Simulation',
+      category: 'Priemyselné simulácie',
+    },
+    {
+      name: 'Employee Training VR',
+      category: 'Firemné školenia',
+    },
+  ];
+
+  return (
+    <div className="bg-black text-white min-h-screen overflow-hidden">
+      <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-black/40 border-b border-cyan-500/20">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+          <div>
+            <h1 className="text-2xl font-black tracking-widest text-cyan-400">
+              VRCYBERTECH
+            </h1>
+          </div>
+
+          <div className="hidden md:flex gap-8 text-sm font-medium text-gray-300">
+            <a href="#services" className="hover:text-cyan-400 transition">
+              Služby
+            </a>
+            <a href="#projects" className="hover:text-cyan-400 transition">
+              Projekty
+            </a>
+            <a href="#about" className="hover:text-cyan-400 transition">
+              O nás
+            </a>
+            <a href="#contact" className="hover:text-cyan-400 transition">
+              Kontakt
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <section className="relative min-h-screen flex items-center justify-center px-6">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,255,255,0.18),transparent_60%)]" />
+
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
+          <div>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-cyan-400/30 bg-cyan-400/10 mb-6 text-cyan-300 text-sm">
+              Next Generation VR Solutions
+            </div>
+
+            <h2 className="text-5xl md:text-7xl font-black leading-tight mb-6">
+              Budujeme
+              <span className="text-cyan-400"> virtuálnu budúcnosť</span>
+            </h2>
+
+            <p className="text-gray-400 text-lg leading-relaxed mb-8 max-w-xl">
+              VRcybertech vytvára profesionálne VR riešenia pre priemysel, výrobné podniky, BOZP školenia a efektívnejšie zaučenie zamestnancov. Pomáhame firmám znižovať chybovosť, šetriť čas a modernizovať firemné procesy cez virtuálnu realitu.
+            </p>
+
+            <div className="flex flex-wrap gap-4">
+              <button className="px-8 py-4 bg-cyan-400 text-black rounded-2xl font-bold hover:scale-105 transition-transform shadow-2xl shadow-cyan-400/30">
+                Začať projekt
+              </button>
+
+              <button className="px-8 py-4 border border-white/20 rounded-2xl hover:bg-white/10 transition">
+                Pozrieť demo
+              </button>
+            </div>
+          </div>
+
+          <div className="relative flex items-center justify-center">
+            <div className="absolute w-96 h-96 bg-cyan-400/20 blur-3xl rounded-full" />
+
+            <div className="relative bg-white/5 border border-white/10 backdrop-blur-xl rounded-[40px] p-8 shadow-2xl shadow-cyan-500/10 w-full max-w-md">
+              <div className="aspect-square rounded-3xl bg-gradient-to-br from-cyan-400/30 to-purple-500/20 border border-white/10 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-8xl mb-4">🥽</div>
+                  <h3 className="text-2xl font-bold">Immersive VR</h3>
+                  <p className="text-gray-400 mt-2">
+                    Realita bola ľuďom očividne málo komplikovaná.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" className="py-28 px-6 border-t border-white/10">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-16 text-center">
+            <h3 className="text-5xl font-black mb-4">
+              Naše služby
+            </h3>
+            <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+              Vyvíjame VR riešenia pre priemysel, bezpečnostné školenia a moderné firemné tréningy.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className="group bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-cyan-400/50 hover:-translate-y-2 transition-all duration-300 backdrop-blur-xl"
+              >
+                <div className="w-14 h-14 rounded-2xl bg-cyan-400/20 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                  ⚡
+                </div>
+
+                <h4 className="text-2xl font-bold mb-4">
+                  {service.title}
+                </h4>
+
+                <p className="text-gray-400 leading-relaxed">
+                  {service.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" className="py-28 px-6 bg-white/[0.02] border-y border-white/10">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
+            <div>
+              <h3 className="text-5xl font-black mb-4">
+                Projekty
+              </h3>
+              <p className="text-gray-400 text-lg max-w-2xl">
+                Praktické VR riešenia zamerané na priemysel, bezpečnosť práce a efektívnejšie firemné procesy.
+              </p>
+            </div>
+
+            <button className="px-6 py-3 rounded-2xl border border-cyan-400/30 text-cyan-300 hover:bg-cyan-400/10 transition w-fit">
+              Všetky projekty
+            </button>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8">
+            {projects.map((project, index) => (
+              <div
+                key={index}
+                className="group overflow-hidden rounded-[32px] bg-gradient-to-br from-cyan-400/10 to-purple-500/10 border border-white/10"
+              >
+                <div className="h-72 bg-black/40 flex items-center justify-center text-7xl group-hover:scale-105 transition-transform duration-500">
+                  🌐
+                </div>
+
+                <div className="p-8">
+                  <span className="text-cyan-300 text-sm uppercase tracking-widest">
+                    {project.category}
+                  </span>
+
+                  <h4 className="text-3xl font-black mt-3 mb-4">
+                    {project.name}
+                  </h4>
+
+                  <p className="text-gray-400 leading-relaxed">
+                    Moderné VR prostredie navrhnuté pre firmy, ktoré chcú efektívnejšie školiť zamestnancov a optimalizovať pracovné procesy.
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="about" className="py-28 px-6">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+          <div>
             <div className="rounded-[40px] overflow-hidden border border-white/10 bg-white/5 backdrop-blur-xl p-10">
               <div className="aspect-video rounded-3xl bg-gradient-to-r from-cyan-500/20 to-purple-500/20 flex items-center justify-center text-8xl">
                 🚀
