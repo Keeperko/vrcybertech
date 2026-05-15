@@ -1,124 +1,97 @@
-<!DOCTYPE html>
-<html lang="sk">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VRcybertech</title>
+export default function VRCybertechWebsite() {
+            <div className="rounded-[40px] overflow-hidden border border-white/10 bg-white/5 backdrop-blur-xl p-10">
+              <div className="aspect-video rounded-3xl bg-gradient-to-r from-cyan-500/20 to-purple-500/20 flex items-center justify-center text-8xl">
+                🚀
+              </div>
+            </div>
+          </div>
 
-<style>
+          <div>
+            <h3 className="text-5xl font-black mb-8">
+              Kto sme
+            </h3>
 
-body{
-margin:0;
-font-family:Arial;
-background:#050816;
-color:white;
-text-align:center;
+            <p className="text-gray-400 text-lg leading-relaxed mb-6">
+              VRcybertech je technologická spoločnosť zameraná na virtuálnu realitu pre priemysel, výrobné podniky, BOZP školenia a firemné tréningy.
+            </p>
+
+            <p className="text-gray-400 text-lg leading-relaxed mb-10">
+              Pomáhame firmám zrýchliť proces zaučenia zamestnancov, zlepšiť bezpečnosť práce a zefektívniť školenia pomocou moderných VR technológií. Virtuálna realita dnes nie je len futuristický doplnok. V priemysle začína byť reálnou konkurenčnou výhodou.
+            </p>
+
+            <div className="grid grid-cols-2 gap-6">
+              <div className="bg-white/5 border border-white/10 rounded-3xl p-6">
+                <div className="text-4xl font-black text-cyan-400 mb-2">50+</div>
+                <div className="text-gray-400">Dokončených projektov</div>
+              </div>
+
+              <div className="bg-white/5 border border-white/10 rounded-3xl p-6">
+                <div className="text-4xl font-black text-cyan-400 mb-2">24/7</div>
+                <div className="text-gray-400">Technická podpora</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="py-28 px-6 border-t border-white/10">
+        <div className="max-w-5xl mx-auto text-center">
+          <div className="bg-gradient-to-br from-cyan-400/10 to-purple-500/10 border border-white/10 rounded-[40px] p-12 backdrop-blur-xl">
+            <h3 className="text-5xl font-black mb-6">
+              Pripravení vstúpiť do VR?
+            </h3>
+
+            <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+              Kontaktujte nás a vytvoríme moderné VR riešenie pre vašu výrobu, školenia alebo bezpečnostné procesy.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-6 mb-10 text-left">
+              <div className="bg-black/30 rounded-3xl p-6 border border-white/10">
+                <div className="text-cyan-400 font-bold mb-2">Email</div>
+                <div className="text-gray-300">info@vrcybertech.com</div>
+              </div>
+
+              <div className="bg-black/30 rounded-3xl p-6 border border-white/10">
+                <div className="text-cyan-400 font-bold mb-2">Telefón</div>
+                <div className="text-gray-300">+421 900 000 000</div>
+              </div>
+
+              <div className="bg-black/30 rounded-3xl p-6 border border-white/10">
+                <div className="text-cyan-400 font-bold mb-2">Sídlo</div>
+                <div className="text-gray-300">Slovakia / Europe</div>
+              </div>
+            </div>
+
+            <form className="grid md:grid-cols-2 gap-6">
+              <input
+                type="text"
+                placeholder="Vaše meno"
+                className="bg-black/30 border border-white/10 rounded-2xl px-5 py-4 outline-none focus:border-cyan-400"
+              />
+
+              <input
+                type="email"
+                placeholder="Email"
+                className="bg-black/30 border border-white/10 rounded-2xl px-5 py-4 outline-none focus:border-cyan-400"
+              />
+
+              <textarea
+                placeholder="Vaša správa"
+                rows="6"
+                className="md:col-span-2 bg-black/30 border border-white/10 rounded-2xl px-5 py-4 outline-none focus:border-cyan-400"
+              />
+
+              <button className="md:col-span-2 px-8 py-5 bg-cyan-400 text-black rounded-2xl font-black hover:scale-[1.02] transition-transform">
+                Odoslať správu
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer className="py-10 px-6 border-t border-white/10 text-center text-gray-500 text-sm">
+        © 2026 VRCYBERTECH. Moderné VR riešenia pre priemysel, BOZP a firemné školenia.
+      </footer>
+    </div>
+  );
 }
-
-header{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-padding:20px;
-background:radial-gradient(circle,#00ffff33 0%,transparent 70%);
-}
-
-h1{
-font-size:70px;
-color:#00ffff;
-margin-bottom:20px;
-}
-
-p{
-font-size:22px;
-max-width:700px;
-line-height:1.7;
-color:#cccccc;
-}
-
-.btn{
-margin-top:40px;
-padding:18px 40px;
-background:#00ffff;
-color:black;
-text-decoration:none;
-border-radius:12px;
-font-weight:bold;
-display:inline-block;
-}
-
-section{
-padding:100px 30px;
-max-width:1200px;
-margin:auto;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-margin-top:50px;
-}
-
-.card{
-background:#11182d;
-padding:30px;
-border-radius:20px;
-}
-
-footer{
-padding:40px;
-border-top:1px solid #222;
-color:#777;
-}
-
-</style>
-</head>
-
-<body>
-
-<header>
-
-<h1>VRCYBERTECH</h1>
-
-<p>
-Moderné VR riešenia, 3D simulácie a digitálne technológie budúcnosti.
-</p>
-
-<a class="btn" href="#services">Naše služby</a>
-
-</header>
-
-<section id="services">
-
-<h2>Služby</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>VR Development</h3>
-<p>Vývoj VR aplikácií a virtuálnych zážitkov.</p>
-</div>
-
-<div class="card">
-<h3>3D Simulácie</h3>
-<p>Interaktívne prostredia pre firmy a gaming.</p>
-</div>
-
-<div class="card">
-<h3>Cyber Security</h3>
-<p>Moderné bezpečnostné riešenia.</p>
-</div>
-
-</div>
-
-</section>
-
-<footer>
-© 2026 VRCYBERTECH
-</footer>
-
-</body>
-</html>
